@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-color:#fff;
+    overflow:hidden;
+}
+header{
+    position: relative;
+    padding:35px 0;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.logo a{
+    font-size:20px;
+    text-decoration:none;
+    font-weight:900;
+    color:#262626;
+    text-transform: capitalize;
+}
+.logo a span{
+    color:#2cd494;
+}
+.menu ul{
+    position: relative;
+    display:flex;
+}
+.menu ul li{
+    list-style:none;
+}
+.menu ul li a{
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    text-transform: uppercase;
+    color:#585656;
+    margin:0 16px;
+    cursor: pointer;
+    transition:0.5s ease-in;
+}
+.menu ul li a.active,
+.menu ul li a:hover{
+    color:#2cd494;
+}
+.login button{
+    padding:8px 30px;
+    font-size:18px;
+    font-weight:600;
+    background-color:#2cd494;
+    border:2px solid #2cd494;
+    color:#fff;
+    letter-spacing:1px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition:0.5s;
+}
+.login button:hover{
+    background-color:transparent;
+    color:#2cd494;
+}
+.content{
+    position: relative;
+}
+.information{
+    position: relative;
+    padding:50px 120px;
+}
+.information p{
+    font-size:18px;
+    text-transform: capitalize;
+    color:#2cd494;
+    padding:8px 0;
+}
+.information h1{
+    font-size:3rem;
+    font-weight:600;
+    color:#262626;
+    text-transform: capitalize;
+}
+.information .detils{
+    font-size:16px;
+    line-height:1.5;
+    padding:15px 0;
+    color:#6e6d6d;
+}
+.information .icons{
+    position: relative;
+    top:12px;
+    left:-8px;
+}
+.information .icons i{
+    position: relative;
+    width:50px;
+    height:50px;
+    border:2px solid #262626;
+    margin:0 8px;
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    text-align:center;
+    line-height:50px;
+    font-size:20px;
+    cursor: pointer;
+}
+.information .icons .facebook{
+    color:rgb(65,65,181);
+    border:2px solid rgb(65,65,181);
+    transition:0.3s;
+}
+.information .icons .facebook:hover{
+    background-color:rgb(65,65,181);
+    color:#fff;
+}
+.information .icons .insta{
+    color:rgb(181,80,65);
+    border:2px solid rgb(181,80,65);
+    transition:0.3s;
+}
+.information .icons .insta:hover{
+    background-color:rgb(181,80,65);
+    color:#fff;
+}
+.information .icons .twitter{
+    color:rgb(108,189,243);
+    border:2px solid rgb(108,189,243);
+    transition:0.3s;
+}
+.information .icons .twitter:hover{
+    background-color:rgb(108,189,243);
+    color:#fff;
+}
+.information .icons .linkdin{
+    color:rgb(4,26,40);
+    border:2px solid rgb(4,26,40);
+    transition:0.3s;
+}
+.information .icons .linkdin:hover{
+    background-color:rgb(4,26,40);
+    color:#fff;
+}
+.information .icons .pintrest{
+    color:rgb(181,80,65);
+    border:2px solid rgb(181,80,65);
+    transition:0.3s;
+}
+.information .icons .pintrest:hover{
+    background-color:rgb(181,80,65);
+    color:#fff;
+}
+.information .btns{
+    position: relative;
+    top:40px;
+}
+.information .btns .btn{
+    position: relative;
+    background-color:transparent;
+    border:none;
+    font-size:18px;
+    cursor: pointer;
+    transition:0.7s;
+}
+.information .btns .btn::before{
+    position: absolute;
+    content:"";
+    bottom:0;
+    left:0;
+    width:80%;
+    height:6px;
+    background-color:#d4c02c6f;
+}
+.information .btns .btn i{
+    position: relative;
+    left:5px;
+    transition:0.7s;
+}
+.information .btns .btn:hover i{
+    transform:translateX(12px);
+}
+.hero-img{
+    position: absolute;
+    right:-60vh;
+    top:-6vh;
+    z-index:2;
+}
+.hero-img img{
+    width:55%;
+}
+.animated{
+    position: absolute;
+    top:3vh;
+    right:65vh;
+    z-index:2;
+}
+.animated img{
+    width:150%;
+    animation:img1 8s linear infinite;
+}
+@keyframes img1{
+    0%{
+        transform:translateY(40px) scale(1);
+    }
+    50%{
+        transform:translateY(-40px) scale(1.2);
+    }
+    100%{
+        transform:translateY(40px) scale(1);
+    }
+}
+.animated2{
+    position: absolute;
+    bottom:-20vh;
+    right:70vh;
+    z-index:2;
+}
+.animated2 img{
+    width:150%;
+    animation:img2 8s linear infinite;
+}
+@keyframes img2{
+    0%{
+        transform:translateX(60px);
+    }
+    50%{
+        transform:translateX(-60px);
+    }
+    100%{
+        transform:translateX(60px);
+    }
+}
+

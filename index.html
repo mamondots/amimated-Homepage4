@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>animated webdesign</title>
+</head>
+<body>
+   <div class="container">
+      <header>
+        <div class="logo">
+            <a href="">mamon<span>dots</span></a>
+         </div>
+         <div class="menu">
+            <ul>
+               <li><a href="" class="active">home</a></li>
+               <li><a href="">about us</a></li>
+               <li><a href="">service</a></li>
+               <li><a href="">work</a></li>
+               <li><a href="">pricing</a></li>
+               <li><a href="">testimonial</a></li>
+               <li><a href="">blog</a></li>
+               <li><a href="">contact</a></li>
+            </ul>
+         </div>
+         <div class="login">
+            <button>login</button>
+         </div>
+      </header>
+      <div class="content">
+         <div class="information">
+             <p>hello ! i am</p>
+             <h1 class="type"></h1>
+             <p class="detils">
+                 Building simple and beautiful things for complex interfaces is what I enjoy<br>
+                 most about my work. I am also interested in crafting beautifuk minimal<br>
+                 products and exploring new worlds.
+             </p>
+             <div class="icons">
+                <i class="fa-brands fa-facebook facebook"></i>
+                <i class="fa-brands fa-instagram insta"></i>
+                <i class="fa-brands fa-twitter twitter"></i>
+                <i class="fa-brands fa-linkedin linkdin"></i>
+                <i class="fa-brands fa-pinterest pintrest"></i>
+             </div>
+             <div class="btns">
+                <button class="btn">See my work <i class="fa-solid fa-arrow-right"></i></button>
+             </div>
+         </div>
+         <div class="hero-img">
+             <img src="img/home.png">
+         </div>
+         <div class="animated">
+            <img src="img/shape-3.png">
+         </div>
+         <div class="animated2">
+            <img src="img/shape-2.png">
+         </div>
+      </div>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+   <script src="typed.js"></script>
+   <script>
+      var typed = new Typed(".type",{
+        strings: [
+                "harold anderson.",
+                "freelance designer.",
+                "gradute based in bangladesh."
+        ],
+        typeSpeed:60,
+        backSpeed:60,
+        loop:true,
+      });
+
+      let amimation = anime({
+         targets:'.logo',
+         translateX:[-80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine'
+      });
+
+      anime({
+         targets:'.menu',
+         translateX:[-80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:300,
+      });
+
+      anime({
+         targets:'.login',
+         translateX:[-80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:400,
+      });
+
+      anime({
+         targets:'.information p',
+         translateX:[-40,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:500,
+      });
+
+      anime({
+         targets:'.information h1',
+         translateX:[40,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:500,
+      });
+
+      anime({
+         targets:'.information .detils',
+         translateX:[-40,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:600,
+      });
+
+      anime({
+         targets:'.information .icons',
+         translateX:[40,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:700,
+      });
+
+      anime({
+         targets:'.information .btns',
+         translateY:[40,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:800,
+      });
+
+      anime({
+         targets:'.hero-img',
+         translateX:[80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:900,
+      });
+
+      anime({
+         targets:'.animated',
+         translateX:[80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:1500,
+      });
+
+      anime({
+         targets:'.animated2',
+         translateX:[-80,0],
+         opacity:[0,1],
+         duration:800,
+         easing:'easeInOutSine',
+         delay:1500,
+      });
+   </script>
+</body>
+</html>
